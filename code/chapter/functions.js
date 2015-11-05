@@ -1,10 +1,12 @@
-function elt(name, className) {
+//var simpleLevel = new Level(simpleLevelPlan);
+
+elt = function(name, className) {
   var elt = document.createElement(name);
   if (className) elt.className = className;
   return elt;
-}
+};
 
-function trackKeys(codes) {
+trackKeys = function(codes) {
   var pressed = Object.create(null);
   function handler(event) {
     if (codes.hasOwnProperty(event.keyCode)) {
@@ -16,9 +18,9 @@ function trackKeys(codes) {
   addEventListener("keydown", handler);
   addEventListener("keyup", handler);
   return pressed;
-}
+};
 
-function runAnimation(frameFunc) {
+runAnimation = function(frameFunc) {
   var lastTime = null;
   function frame(time) {
     var stop = false;
@@ -31,7 +33,7 @@ function runAnimation(frameFunc) {
       requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
-}
+};
 
 var arrows = trackKeys(arrowCodes);
 
@@ -49,7 +51,7 @@ function runLevel(level, Display, andThen) {
   });
 }
 
-function runGame(plans, Display) {
+runGame = function(plans, Display) {
   function startLevel(n) {
     runLevel(new Level(plans[n]), Display, function(status) {
       if (status == "lost")
@@ -61,4 +63,4 @@ function runGame(plans, Display) {
     });
   }
   startLevel(0);
-}
+};

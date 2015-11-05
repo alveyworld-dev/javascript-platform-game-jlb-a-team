@@ -1,10 +1,10 @@
-function Player(){}
-function Enemy(){}
-function Coin(){}
-function DOMDisplay(){}
-function Lava(){}
-function Level(){}
-function Vector(){}
+//function Player(){}
+//function Enemy(){}
+//function Coin(){}
+//function Lava(){}
+//function Level(){}
+//function DOMDisplay(){}
+//function Vector(){}
 
 var simpleLevelPlan = [
   "                      ",
@@ -17,12 +17,6 @@ var simpleLevelPlan = [
   "      xxxxxxxxxxxxxx  ",
   "                      "
 ];
-
-var actorChars = {
-  "@": Player,
-  "o": Coin,
-  "=": Lava, "|": Lava, "v": Lava
-};
 
 var scale = 20;
 

@@ -1,4 +1,4 @@
-function Lava(pos, ch) {
+Lava = function(pos, ch) {
   this.pos = pos;
   this.size = new Vector(1, 1);
   if (ch == "=") {
