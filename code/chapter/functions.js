@@ -37,7 +37,9 @@ runAnimation = function(frameFunc) {
 
 var arrows = trackKeys(arrowCodes);
 
+var g_level;
 function runLevel(level, Display, andThen) {
+  g_level = level
   var display = new Display(document.body, level);
   runAnimation(function(step) {
     level.animate(step, arrows);
@@ -50,6 +52,7 @@ function runLevel(level, Display, andThen) {
     }
   });
 }
+
 
 runGame = function(plans, Display) {
   function startLevel(n) {
