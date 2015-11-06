@@ -26,6 +26,13 @@ runAnimation = function(frameFunc) {
     var stop = false;
     if (lastTime != null) {
       var timeStep = Math.min(time - lastTime, 100) / 1000;
+      console.log(timeStep);
+      /*var frameMil = 1000/60.0;
+      var wait = frameMil-(time-lastTime);
+      console.log(time);
+      if (wait < 0)
+        wait = 0;
+      console.log(wait);*/
       stop = frameFunc(timeStep) === false;
     }
     lastTime = time;

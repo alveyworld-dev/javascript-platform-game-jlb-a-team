@@ -1,4 +1,6 @@
-.background    { background: rgb(52, 166, 251);
+.background    { background: rgb(0, 0, 0);
+				 /*background-image: url("/resources/images/backgrounds/background-space-000.jpg");
+				 /*background-repeat: repeat-x;*/
                  table-layout: fixed;
                  border-spacing: 0;   }
 .background td { padding: 0;          }

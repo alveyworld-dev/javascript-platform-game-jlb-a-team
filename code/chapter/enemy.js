@@ -2,7 +2,7 @@ Enemy = function(pos) {
   this.pos = pos.plus(new Vector(0, -0.5));
   this.size = new Vector(0.8, 1.5);
   this.speed = new Vector(0, 0);
-  this.xSpeed = 8;
+  this.xSpeed = 6;
 };
 Enemy.prototype.type = "enemy";
 
@@ -35,8 +35,8 @@ Enemy.prototype.moveY = function(step, level, keys) {
   var newPos = this.pos.plus(motion);
   var obstacle = level.obstacleAt(newPos, this.size);
   if (obstacle) {
-    level.playerTouched(obstacle);
-    if (keys.up && this.speed.y > 0)
+    //level.playerTouched(obstacle);
+    if (this.speed.y > 0)
       this.speed.y = -jumpSpeed;
     else
       this.speed.y = 0;
@@ -50,8 +50,8 @@ Enemy.prototype.act = function(step, level, keys) {
   this.moveY(step, level, keys);
 
   var otherActor = level.actorAt(this);
-  if (otherActor)
-    level.playerTouched(otherActor.type, otherActor);
+  //if (otherActor)
+  //  level.playerTouched(otherActor.type, otherActor);
 
   // Losing animation
   if (level.status == "lost") {
