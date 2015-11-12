@@ -1,5 +1,5 @@
 .background    { background: rgb(0, 0, 0);
-				 /*background-image: url("/resources/images/backgrounds/background-space-000.jpg");
+				 /*background-image: url("/resources/images/backgrounds/background-space-000.jpg");*/
 				 /*background-repeat: repeat-x;*/
                  table-layout: fixed;
                  border-spacing: 0;   }
@@ -9,7 +9,7 @@
 
 .actor  { position: absolute;  }
 .coin   { background: rgb(241, 229, 89); }
-.player { background: rgb(64, 64, 64); }
+.player { background: rgb(0, 0, 255); }
 .enemy { background: rgb(255, 0, 0); }
 
 .game {

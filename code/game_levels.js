@@ -1,4 +1,5 @@
 var GAME_LEVELS = [
+  
   ["                                                                                ",
    "                                                                                ",
    "                                                                                ",
@@ -35,7 +36,7 @@ var GAME_LEVELS = [
    "                                                              xx!!!!!!!!!!!xx            v                        ",
    "                                                               xxxx!!!!!xxxx                                      ",
    "                                               x     x            xxxxxxx        xxx         xxx                  ",
-   "                EEEEEEEEEEEEEEEEEEEEE          x     x                           x x         x x                  ",
+   "                                               x     x                           x x         x x                  ",
    "                                               x     x                             x         x                    ",
    "                                               x     x                             xx        x                    ",
    "                                               xx    x                             x         x                    ",
@@ -133,8 +134,56 @@ var GAME_LEVELS = [
    "        x=                  =                =x   x                     xxx                                   ",
    "        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   x!!!!!!!!!!!!!!!!!!!!!xxx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
    "                                                  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-   "                                                                                                              "]
+   "                                                                                                              "],
+  ["xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "                                                                                            x                                                     ",
+   "                                                                                            x                                                     ",
+   "                                                                                            x                                                     ",
+   "                                                                                            x                                                     ",
+   "                                                                                            x                                                     ",
+   "  x                                                                               o      x  x  x                                      ooooooooo   ",
+   "  x                                                          o                    x       x x x                                     xxxxxxxxxxxxx ",
+   "  x                                                        xxxxx      xx    x!!!!!x        xxx                                 xx                 ",
+   "  x  @                                                                      x!!!!!x         x                             xx                      ",
+   "  xxxxxxx                                             o                     xxxvxxx                                  o                            ",
+   "                                                    xxxxx                                                           xxx                           ",
+   "                                                                                                                                                  ",
+   "            o                                             x                                                  xx                                   ",
+   "                                     x                                                                                                            ",
+   "                                     x                     xxxxxxxxxxxxxxxxx        x                                                             ",
+   "            o                        x                                      xx     ox                   xx     xx                                 ",
+   "                         o           x                                      x       x            xx                                               ",
+   "            o          xxxxx         x                                      x      xx                                xx                           ",
+   "                              x      x                                      xo      x                   ||       o                                ",
+   "         xxxxxxxx             x      x           xxxxxxx                    x       x                                                             ",
+   "                              x      x           xxxxxxx                    xx      x                                                             ",
+   "                              x      x           x     x                    x       x                          xx                                 ",
+   "     o                        x      x         xxx  o  xxx                  x       x            ||                                               ",
+   "   xxxxx                      x      xxxxxxxxxxx         xxxxxxxxxxxxxxxxxxx       ox                   xx                                        ",
+   "                              x                                                    xx     o      xx                                               ",
+   "                              x                =               =         o          x   xxxxx                                                     ",
+   "                              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                             ",
+   "                                                                                                                                                  ",
+   "                                                                                                                                                  ",
+   "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"],
+
 ];
 
 if (typeof module != "undefined" && module.exports)
   module.exports = GAME_LEVELS;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
