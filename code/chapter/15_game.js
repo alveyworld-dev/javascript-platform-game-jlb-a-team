@@ -29,5 +29,12 @@ var playerXSpeed = 7;
 var gravity = 30;
 var jumpSpeed = 17;
 
-var arrowCodes = {37: "left", 38: "up", 39: "right"};
+var arrowCodes = {
+	37: "left",
+	38: "up",
+	39: "right",
+
+	219: "bracketLeft",
+	221: "bracketRight",
+};
 

@@ -2,7 +2,7 @@ Enemy = function(pos) {
   this.pos = pos.plus(new Vector(0, -0.5));
   this.size = new Vector(0.8, 1.5);
   this.speed = new Vector(0, 0);
-  this.xSpeed = 6;
+  this.xSpeed = 4;
 };
 Enemy.prototype.type = "enemy";
 
@@ -36,7 +36,7 @@ Enemy.prototype.moveY = function(step, level, keys) {
   var obstacle = level.obstacleAt(newPos, this.size);
   if (obstacle) {
     //level.playerTouched(obstacle);
-    if (this.speed.y > 0)
+    if (this.speed.y > 0 && randomRange(0, 60) === 0)
       this.speed.y = -jumpSpeed;
     else
       this.speed.y = 0;

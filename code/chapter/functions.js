@@ -26,7 +26,7 @@ runAnimation = function(frameFunc) {
     var stop = false;
     if (lastTime != null) {
       var timeStep = Math.min(time - lastTime, 100) / 1000;
-      console.log(timeStep);
+      //console.log(timeStep);
       /*var frameMil = 1000/60.0;
       var wait = frameMil-(time-lastTime);
       console.log(time);
@@ -46,11 +46,20 @@ var arrows = trackKeys(arrowCodes);
 
 var g_level;
 function runLevel(level, Display, andThen) {
+  console.log("rl");
   g_level = level
   var display = new Display(document.body, level);
   runAnimation(function(step) {
     level.animate(step, arrows);
     display.drawFrame(step);
+
+    if (arrows.bracketLeft) {
+      andThen("previous");
+    }
+    else if (arrows.bracketRight) {
+      andThen("next");
+    }
+
     if (level.isFinished()) {
       display.clear();
       if (andThen)
@@ -64,12 +73,21 @@ function runLevel(level, Display, andThen) {
 runGame = function(plans, Display) {
   function startLevel(n) {
     runLevel(new Level(plans[n]), Display, function(status) {
-      if (status == "lost")
+      if (status == "lost") {
         startLevel(n);
-      else if (n < plans.length - 1)
+      }
+
+      else if (n < plans.length - 1 || status === "next") {
         startLevel(n + 1);
-      else
+      }
+
+      else if (n <= 0 || status === "previous") {
+        startLevel(n - 1);
+      }
+
+      else {
         console.log("You win!");
+      }
     });
   }
   startLevel(0);
