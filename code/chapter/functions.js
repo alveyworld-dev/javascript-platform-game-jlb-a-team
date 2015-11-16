@@ -90,5 +90,5 @@ runGame = function(plans, Display) {
       }
     });
   }
-  startLevel(0);
+  startLevel(5);
 };
